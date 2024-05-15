@@ -1,0 +1,596 @@
+*,
+*::before,
+*::after {
+    --color-principal: #1E2326;
+    --color-secundario: #BAFF39;
+    --color-terciario: #252A2E;
+    --color-acento: #FFF;
+    --color-boton-uno: #00ABE4;
+    --color-boton-dos: #FFE139;
+    box-sizing: border-box;
+}
+
+html {
+    /* Permite deslizar al hacer click en los links del menú  */
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    background-color: var(--color-principal);
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Sección del Menú */
+
+.menu {
+    background: var(--color-principal);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;    
+}
+
+.menu .menu__header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+
+
+.menu__header__logo a {
+    font-family: 'Righteous';
+    font-size: 32px;
+    color: var(--color-secundario);
+}
+
+.menu__header__logo a:hover {
+    color: var(--color-acento);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list li a {
+    text-align: none;
+    color: var(--color-acento);
+    margin: 0 15px;
+    padding: 3px;
+}
+
+.menu__list li a:hover {
+    color: var(--color-secundario);
+}
+
+.menu__responsive {
+    color: var(--color-secundario);
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__list__button {
+    padding: 15px 15px;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+}
+
+.menu__list__button a {
+    color: var(--color-principal) !important;
+    font-weight: bold;
+}
+
+/* Sección del Header */
+
+.title {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(../img/background.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: var(--color-acento);
+    display: flex;
+    align-items: center;
+}
+
+.title__div {
+    padding: 20px;
+    background-color: var(--color-principal);
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.title__profile {
+    margin-top: 40px;
+    border: 5px solid var(--color-secundario);
+    display: block;
+    width: 60%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.title__bio__nombre {
+    margin-top: 30px;
+    font-size: 36px;
+    font-family: 'Righteous';
+}
+
+.title__bio__carrera {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.title__network__item {
+    color: var(--color-acento);
+    display: inline-block;
+    border: 1px solid var(--color-acento);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 10px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.title__network__item:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+/* Sección Sobre Mí */
+
+.about {
+    background-color: var(--color-terciario);
+    color: var(--color-acento);
+    padding: 50px 20px;
+}
+
+.about__container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about__title {
+    font-size: 38px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about__paragraph {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.about__row {
+    display: flex;    
+}
+
+.about__colums {
+    width: 50%;
+}
+
+.about__colums__title {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about__colums__box ul li {
+    margin: 15px 0;
+}
+
+.about__colums__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about__colums__box {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-terciario);
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.about__colums__box:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+.about__colums__box__img i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Sección Formación Académica */
+
+.academic {
+    background-color: var(--color-principal);
+    color: var(--color-acento);
+}
+
+.academic__container {
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.academic__title {
+    font-size: 38px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.academic__row {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.academic__colums {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.academic__colums__left__item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: var(--color-terciario);
+    position: relative;
+    border-right: 2px solid var(--color-secundario);
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.academic__colums__left__item h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.academic__colums__left__item__institute {
+    color: var(--color-secundario);
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.academic__colums__left__item__date {
+    display: block;
+    color: var(--color-secundario);
+    margin-bottom: 10px;
+}
+
+.academic__colums__left__item__text {
+    line-height: 24px;
+}
+
+.academic__colums__right__item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: var(--color-terciario);
+    position: relative;
+    border-left: 2px solid var(--color-secundario);
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.academic__colums__right__item h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.academic__colums__right__item__institute {
+    color: var(--color-secundario);
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.academic__colums__right__item__date {
+    display: block;
+    color: var(--color-secundario);
+    margin-bottom: 10px;
+}
+
+.academic__colums__right__item__text {
+    line-height: 24px;
+}
+
+/* Sección Experiencia Profesional */
+
+.experience {
+    background-color: var(--color-terciario);
+    padding: 50px 20px;
+}
+
+.experience__section__title {
+    font-size: 38px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    color: var(--color-acento);
+}
+
+.experience__section_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.experience__box {
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.experience__img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.experience__title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(186, 255, 57, 1), rgba(186, 255, 57, 0.5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+    border-radius: 10px;
+}
+
+.experience__title:hover {
+    opacity: 1;
+}
+
+.experience__title h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.experience__title h6 {
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.experience__title:hover h2, h6 {
+    color: var(--color-principal);
+}
+
+.experience-botons {
+    margin-top: 15px;
+}
+
+.experience__boton__repo {
+    border-radius: 7px;
+    background-color: var(--color-boton-uno);
+    padding: 10px 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.experience__boton__demo {
+    border-radius: 7px;
+    background-color: var(--color-boton-dos);
+    padding: 10px 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+/* Sección Contacto */
+
+.formcontacto {
+    background-image: url(../img/contact_bg.png);
+    background-color: var(--color-principal);
+    color: var(--color-acento);
+}
+
+.formcontacto__title {
+    font-size: 38px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.formcontacto__subtitle {
+    text-align: center;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.formcontacto__container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.formcontacto__row {
+    display: flex;
+}
+
+.formcontacto__colums {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.formcontacto__form input, .formcontacto__form textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: var(--color-terciario);
+    color: var(--color-acento);
+    font-size: 18px;
+}
+
+.formcontacto__boton {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--color-secundario);
+    border-radius: 10px;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: var(--color-acento);
+    position: relative;
+    z-index: 10;
+}
+
+.formcontacto__img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Sección de Footer */
+
+.footer {
+    background-color: var(--color-terciario);
+    color: var(--color-acento);
+    padding: 40px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-size: 18px;
+}
+
+.footer_heart {
+    color: red;
+}
+
+.footer__year {
+    margin-top: 10px;
+}
+
+
+/*=============================================
+=            Sección Responsive               =
+=============================================*/
+
+/*Vista Modo Tablet*/
+
+@media (max-width: 768px) {
+
+    /* Sección del menú */
+
+    nav {
+        display: none;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: var(--color-principal);
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        padding: 10px 0;
+    }
+
+    .menu__responsive {
+        display: block;
+    }
+
+    /* Sección Formación Académica */
+
+    .academic__container {
+        width: 90%;
+    }
+    
+    /* Sección de Contacto */
+
+    .formcontacto__container {
+        width: 90%;
+    }
+
+    .formcontacto__row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formcontacto__colums {
+        width: 100%;
+    }
+    
+    .none__img {
+        display: none;
+    }
+    
+}
+
+/* Vista Modo Mobile */
+
+@media (max-width: 425px) {
+
+    /* Sección del header */
+
+    .title__div {
+
+        width: 90%;
+        height: 75vh;
+        height: 450px;
+    }
+
+    /* Sección Sobre Mí */
+    
+    .about__container {
+        width: 90%;
+    }
+
+    /* Sección de Contacto */
+
+    .formcontacto__container {
+        width: 90%;
+    }
+}

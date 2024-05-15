@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Portafolio | Byron Montenegro</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sección del menú -->
+        <section class="menu">
+            <header class="menu__header">
+                <div class="menu__header__logo">
+                    <a href="#">Byron</a>
+                </div>
+                <nav id="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__list__item"><a href="#sobre-mi" onclick="seleccionar()">Sobre mí</a></li>
+                        <li class="menu__list__item"><a href="#formacion" onclick="seleccionar()">Formación</a></li>
+                        <li class="menu__list__item"><a href="#xp" onclick="seleccionar()">Experiencia</a></li>
+                        <li class="menu__list__item"><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                        <li class="menu__list__button"><a href="assets/files/CV_BYRON.pdf" onclick="seleccionar()" target="_blank">Curriculum</a></li>
+                    </ul>
+                </nav>
+                <div class="menu__responsive" onclick="mostrarOcultarMenu()">
+                    <i class="bi bi-filter-square-fill"></i>
+                </div>
+            </header>
+        </section>
+
+        <!-- Sección del header -->
+        <section class="title">
+            <div class="title__div">
+                <div class="title__image">
+                    <img class="title__profile" src="assets/img/Profile.png" alt="Perfil">
+                </div>
+                <div class="title__container">
+                    <h2 class="title__bio__nombre">Soy Byron Montenegro</h2>
+                    <h3 class="title__bio__carrera">Desarrollador Web Full Stack</h3>
+                    <ul class="title__network">
+                        <li class="title__network__item"><a href="https://github.com/SoyAlecQ" target="_blank"><i
+                                    class="bi bi-github"></i></a></li>
+                        <li class="title__network__item"><a href="https://www.linkedin.com/in/byronmontenegro/"
+                                target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                        <li class="title__network__item"><a href="https://www.instagram.com/soyalecq/"
+                                target="_blank"><i class="bi bi-instagram"></i></a></li>
+                        <li class="title__network__item"><a href="https://twitter.com/SoyAlecQ" target="_blank"><i
+                                    class="bi bi-twitter-x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section class="about" id="sobre-mi">
+            <div class="about__container">
+                <h3 class="about__title">Sobre mí</h3>
+                <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ipsa
+                    atque magni quibusdam quidem tenetur in suscipit beatae quod, consectetur non, esse nam neque
+                    deleniti vel pariatur vero tempore nihil?</p>
+
+
+                <div class="about__row">
+                    <!-- Hobbies -->
+                    <div class="about__colums">
+                        <h3 class="about__colums__title">Hobbies</h3>
+                        <div class="about__colums__line">
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="bi bi-earbuds"></i></li>
+                                    <li class="about__colums__box__name">Música</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="bi bi-controller"></i></li>
+                                    <li class="about__colums__box__name">Juegos</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="bi bi-journal-bookmark-fill"></i></li>
+                                    <li class="about__colums__box__name">Libros</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="bi bi-camera-reels-fill"></i></li>
+                                    <li class="about__colums__box__name">Películas</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="bi bi-android2"></i></li>
+                                    <li class="about__colums__box__name">Android</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="bi bi-cookie"></i></li>
+                                    <li class="about__colums__box__name">Cocina</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="bi bi-camera2"></i></li>
+                                    <li class="about__colums__box__name">Fotografía</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="bi bi-tv-fill"></i></li>
+                                    <li class="about__colums__box__name">Televisión</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="about__colums">
+                        <h3 class="about__colums__title">Skills</h3>
+                        <div class="about__colums__line">
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="fa-brands fa-html5"></i></li>
+                                    <li class="about__colums__box__name">HTML5</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="fa-brands fa-css3-alt"></i></li>
+                                    <li class="about__colums__box__name">CSS3</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="fa-brands fa-js"></i></li>
+                                    <li class="about__colums__box__name">Javascript</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="fa-brands fa-python"></i></li>
+                                    <li class="about__colums__box__name">Python</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="fa-brands fa-angular"></i></li>
+                                    <li class="about__colums__box__name">Angular</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="fa-brands fa-node"></i></li>
+                                    <li class="about__colums__box__name">NodeJS</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="fa-brands fa-node-js"></i></li>
+                                    <li class="about__colums__box__name">ExpressJS</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__colums__box">
+                                <ul>
+                                    <li class="about__colums__box__img"><i class="fa-solid fa-database"></i></li>
+                                    <li class="about__colums__box__name">MongoDB</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Formación Académica -->
+        <section class="academic" id="formacion">
+            <div class="academic__container">
+                <h2 class="academic__title">Formación académica</h2>
+
+                <div class="academic__row">
+                    <div class="academic__colums__left">
+                        <div class="academic__colums__left__item">
+                            <h3>Técnico en Sistemas</h3>
+                            <span class="academic__colums__left__item__institute">Servicio Nacional de Aprendizaje -
+                                SENA</span>
+                            <span class="academic__colums__left__item__date">Año 2015</span>
+                            <p class="academic__colums__left__item__text">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Architecto fuga ullam a error
+                                ad fugiat earum, illo eius expedita similique quasi cum voluptates voluptatibus iste
+                                repellendus, qui beatae delectus perspiciatis?</p>
+                        </div>
+
+                        <div class="academic__colums__left__item">
+                            <h3>Técnico en Sistemas</h3>
+                            <span class="academic__colums__left__item__institute">Servicio Nacional de Aprendizaje -
+                                SENA</span>
+                            <span class="academic__colums__left__item__date">Año 2015</span>
+                            <p class="academic__colums__left__item__text">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Architecto fuga ullam a error
+                                ad fugiat earum, illo eius expedita similique quasi cum voluptates voluptatibus iste
+                                repellendus, qui beatae delectus perspiciatis?</p>
+                        </div>
+                    </div>
+
+                    <div class="academic__colums__right">
+                        <div class="academic__colums__right__item">
+                            <h3>Técnico en Sistemas</h3>
+                            <span class="academic__colums__right__item__institute">Servicio Nacional de Aprendizaje -
+                                SENA</span>
+                            <span class="academic__colums__right__item__date">Año 2015</span>
+                            <p class="academic__colums__right__item__text">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Architecto fuga ullam a error
+                                ad fugiat earum, illo eius expedita similique quasi cum voluptates voluptatibus iste
+                                repellendus, qui beatae delectus perspiciatis?</p>
+                        </div>
+
+                        <div class="academic__colums__right__item">
+                            <h3>Técnico en Sistemas</h3>
+                            <span class="academic__colums__right__item__institute">Servicio Nacional de Aprendizaje -
+                                SENA</span>
+                            <span class="academic__colums__right__item__date">Año 2015</span>
+                            <p class="academic__colums__right__item__text">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Architecto fuga ullam a error
+                                ad fugiat earum, illo eius expedita similique quasi cum voluptates voluptatibus iste
+                                repellendus, qui beatae delectus perspiciatis?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Experiencia - Proyectos -->
+        <section class="experience" id="xp">
+            <h2 class="experience__section__title">Experiencia Profesional</h2>
+            <div class="experience__section_gallery">
+                <div class="experience__box">
+                    <div class="experience__info">
+                        <img src="assets/img/p1.png" class="experience__img">
+                        <div class="experience__title">
+                            <h2>Encriptador de texto</h2>
+                            <h6>Alura One</h6>
+                            <div class="experience-botons">
+                                <span class="experience__repo"><a href="#"><button
+                                            class="experience__boton__repo">Repositorio</button></a></span>
+                                <span class="demo"><a href="#"><button
+                                            class="experience__boton__demo">Demo</button></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience__box">
+                    <div class="experience__info">
+                        <img src="assets/img/p1.png" class="experience__img">
+                        <div class="experience__title">
+                            <h2>Encriptador de texto</h2>
+                            <h6>Alura One</h6>
+                            <div class="experience-botons">
+                                <span class="experience__repo"><a href="#"><button
+                                            class="experience__boton__repo">Repositorio</button></a></span>
+                                <span class="demo"><a href="#"><button
+                                            class="experience__boton__demo">Demo</button></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience__box">
+                    <div class="experience__info">
+                        <img src="assets/img/p1.png" class="experience__img">
+                        <div class="experience__title">
+                            <h2>Encriptador de texto</h2>
+                            <h6>Alura One</h6>
+                            <div class="experience-botons">
+                                <span class="experience__repo"><a href="#"><button
+                                            class="experience__boton__repo">Repositorio</button></a></span>
+                                <span class="demo"><a href="#"><button
+                                            class="experience__boton__demo">Demo</button></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience__box">
+                    <div class="experience__info">
+                        <img src="assets/img/p1.png" class="experience__img">
+                        <div class="experience__title">
+                            <h2>Encriptador de texto</h2>
+                            <h6>Alura One</h6>
+                            <div class="experience-botons">
+                                <span class="experience__repo"><a href="#"><button
+                                            class="experience__boton__repo">Repositorio</button></a></span>
+                                <span class="demo"><a href="#"><button
+                                            class="experience__boton__demo">Demo</button></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="formcontacto" id="contacto">
+            <div class="formcontacto__container">
+                <h2 class="formcontacto__title">Contacto</h2>
+                <div class="formcontacto__subtitle">
+                    <h3 class="formcontacto__subtext">¿Quieres contactarme?</h3>
+                    <h3 class="formcontacto__subtext">Deja tus datos y me pondré en contacto contigo</h3>
+                </div>
+                <div class="formcontacto__row">
+                    <div class="formcontacto__colums">
+                        <div class="formcontacto__info">
+                            <form class="formcontacto__form" name="form">
+                                <input type="text" name="nombre" placeholder="Nombre" class="formcontacto__input">
+                                <input type="email" name="email" placeholder="Email" class="formcontacto__input">
+                                <input type="text" name="asunto" placeholder="Asunto" class="formcontacto__input">
+                                <textarea name="mensaje" id="mensaje" cols="40" rows="5" placeholder="Mensaje"
+                                    class="formcontacto__textarea"></textarea>
+                                <button type="submit" class="formcontacto__boton">Enviar <i
+                                        class="bi bi-send-fill"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="formcontacto__colums">
+                        <img src="/assets/img/contact.jpg" class="formcontacto__img none__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Sección de Footer -->
+        <section class="footer">
+            <div class="footer__rodapie">
+                <p>Desarrollado con mucho <span class="footer_heart">&hearts;</span> por Byron Montenegro</p>
+                <p class="footer__year">2024</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Script Javascript -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
