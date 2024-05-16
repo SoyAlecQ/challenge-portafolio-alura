@@ -21,34 +21,36 @@ function seleccionar() {
 
 /* Función que valida el formulario de contacto */
 
-const form = document.querySelector("form");
-
-const nombre = document.getElementById("nombre").value.trim();
-const email = document.getElementById("email").value.trim();
-const asunto = document.getElementById("asunto").value.trim();
-const mensaje = document.getElementById("mensaje").value.trim();
-
 function enviarCorreo() {
+
+    var asunto = document.getElementById("asunto").value.trim();
+    var mensaje = document.getElementById("mensaje").value.trim();
+
     Email.send({
         Host: "smtp.elasticemail.com",
         Username: "byalmon@gmail.com",
         Password: "F396B9517CE3E1FC6295358F6003800E88ED",
         To: 'byalmon@gmail.com',
         From: "byalmon@gmail.com",
-        Subject: "This is the subject",
-        Body: "And this is the body"
+        Subject: asunto,
+        Body: mensaje
     }).then(
         message => alert(message)
     );
 }
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    enviarEmail();
-});
-
 function validarFormulario() {
+
+    var nombre = document.getElementById("nombre").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var asunto = document.getElementById("asunto").value.trim();
+    var mensaje = document.getElementById("mensaje").value.trim();
+
+    var errorNombre = document.getElementById("errorNombre");
+    var errorEmail = document.getElementById("errorEmail");
+    var errorAsunto = document.getElementById("errorAsunto");
+    var errorMensaje = document.getElementById("errorMensaje");
+    var enviarBoton = document.getElementById("enviarBoton");
 
     // Validación del campo Nombre
     if (nombre === "") {
@@ -95,9 +97,6 @@ function validarFormulario() {
         errorMensaje.innerHTML = "";
     }
 
-    // Habilitar el botón de enviar
-    enviarBoton.disabled = false;
-
     // Enviar el formulario
-    return true;
+    enviarCorreo();
 }

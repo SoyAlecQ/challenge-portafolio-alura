@@ -374,24 +374,24 @@
                 <div class="formcontacto__row">
                     <div class="formcontacto__colums">
                         <div class="formcontacto__info">
-                            <form class="formcontacto__form" name="form">
+                            <form class="formcontacto__form" name="form" onsubmit="return validarFormulario()">
                                 <input type="text" name="nombre" id="nombre" placeholder="Nombre"
                                     class="formcontacto__input" autocomplete="off">
-                                <div class="error"></div>
+                                <span id="errorNombre" class="error"></span>
 
                                 <input type="email" name="email" id="email" placeholder="Email"
                                     class="formcontacto__input" autocomplete="off">
-                                <div id="errorEmail" class="error"></div>
+                                <span id="errorEmail" class="error"></span>
 
                                 <input type="text" name="asunto" id="asunto" placeholder="Asunto"
                                     class="formcontacto__input" autocomplete="off">
-                                <div id="errorAsunto" class="error"></div>
+                                <span id="errorAsunto" class="error"></span>
 
                                 <textarea name="mensaje" id="mensaje" cols="40" rows="5" placeholder="Mensaje"
                                     class="formcontacto__textarea" autocomplete="off"></textarea>
-                                <div id="errorMensaje" class="error"></div>
+                                <span id="errorMensaje" class="error"></span>
 
-                                <button type="submit" class="formcontacto__boton" id="enviarBoton" disabled>Enviar <i
+                                <button type="submit" class="formcontacto__boton" id="enviarBoton">Enviar <i
                                         class="bi bi-send-fill"></i></button>
                             </form>
                         </div>
@@ -415,7 +415,7 @@
     </div>
 
     <!-- Script Javascript -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="assets/js/smtp.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
