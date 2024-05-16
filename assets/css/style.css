@@ -265,7 +265,7 @@ nav ul {
 }
 
 .academic__colums__left__item h3 {
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Righteous';
     margin-top: 25px;
     margin-bottom: 25px;
@@ -273,7 +273,7 @@ nav ul {
 
 .academic__colums__left__item__institute {
     color: var(--color-secundario);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     display: block;
 }
@@ -299,7 +299,7 @@ nav ul {
 }
 
 .academic__colums__right__item h3 {
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Righteous';
     margin-top: 25px;
     margin-bottom: 25px;
@@ -307,7 +307,7 @@ nav ul {
 
 .academic__colums__right__item__institute {
     color: var(--color-secundario);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     display: block;
 }
